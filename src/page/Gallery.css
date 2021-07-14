@@ -3,10 +3,25 @@ img {
   height: auto;
 }
 
+.thumbnail-area {
+  margin: 5px 0;
+}
+
 .thumbnail {
   background-size: cover;
   width: 100px;
   height: 100px;
   display: inline-block;
-  margin-right: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.Image {
+  margin-top: 20px;
+}
+
+.Image-title {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
 }
