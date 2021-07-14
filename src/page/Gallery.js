@@ -40,7 +40,7 @@ function Gallery() {
       </div>
       <div className="Image">
         <h1 className="Image-title">{name}</h1>
-        <img src={src} />
+        <img src={src} alt="" />
       </div>
     </div>
   );
