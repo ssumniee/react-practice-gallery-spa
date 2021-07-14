@@ -6,16 +6,37 @@ function Gallery() {
   const [src, setSrc] = useState("/images/고양이.png");
 
   const handleClickThmb = (event) => {
-    setName(event.target.name);
-    setSrc(event.target.src);
+    setName(event.target.value);
+    setSrc(`/images/${event.target.value}.png`);
   };
 
   return (
     <div className="Gallery">
       <div className="thumbnail-area">
-        <img className="thumbnail" src="/images/고양이.png" name="고양이" onClick={handleClickThmb} />
-        <img className="thumbnail" src="/images/강아지.png" name="강아지" onClick={handleClickThmb} />
-        <img className="thumbnail" src="/images/사람.png" name="사람" onClick={handleClickThmb} />
+        <button
+          className="thumbnail"
+          style={{
+            backgroundImage: "url(/images/고양이.png)",
+          }}
+          value="고양이"
+          onClick={handleClickThmb}
+        ></button>
+        <button
+          className="thumbnail"
+          style={{
+            backgroundImage: "url(/images/강아지.png)",
+          }}
+          value="강아지"
+          onClick={handleClickThmb}
+        ></button>
+        <button
+          className="thumbnail"
+          style={{
+            backgroundImage: "url(/images/사람.png)",
+          }}
+          value="사람"
+          onClick={handleClickThmb}
+        ></button>
       </div>
       <div className="Image">
         <h1 className="Image-title">{name}</h1>
