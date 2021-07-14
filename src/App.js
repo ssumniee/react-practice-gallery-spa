@@ -2,7 +2,7 @@ import "./App.css";
 import Gallery from "./page/Gallery";
 import About from "./page/About";
 import { Switch, Route } from "react-router-dom";
-import List from "./List";
+import List from "./component/List";
 
 function App() {
   return (

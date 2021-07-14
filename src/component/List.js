@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 
 function List() {
   return (
-    <li className="List">
-      <Link to="/">Gallery</Link>
-      <Link to="/about">About</Link>
-    </li>
+    <ul className="List">
+      <li>
+        <Link to="/">Gallery</Link>
+      </li>
+      <li>
+        <Link to="/about">About</Link>
+      </li>
+    </ul>
   );
 }
 
